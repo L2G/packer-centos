@@ -3,7 +3,7 @@
         {
             "boot_command": [
                 "<esc>",
-                "<wait>linux ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/anaconda-ks.cfg<enter>"
+                "<wait>linux ks=https://raw.github.com/russmckendrick/packer-centos/master/http_directory/anaconda-ks.cfg<enter>"
             ],
             "boot_wait": "5s",
             "disk_size": 40000,
