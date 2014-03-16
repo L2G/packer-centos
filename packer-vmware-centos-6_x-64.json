@@ -19,7 +19,7 @@
             "ssh_wait_timeout": "20m",
             "tools_upload_flavor": "linux",
             "type": "vmware-iso",
-            "vm_name": "packer-centos-6_5-64"
+            "vm_name": "centos-6_5-64-puppet-riak"
         }
     ],
     "provisioners": [
@@ -35,7 +35,7 @@
     "post-processors": [
         {
             "type": "vagrant",
-            "output": "centos-6_5-64_vmware.box"
+            "output": "centos-6_5-64-puppet-riak_vmware.box"
         }
     ]
 }

@@ -23,7 +23,7 @@
                 ["modifyvm", "{{.Name}}", "--memory", "1024"],
                 ["modifyvm", "{{.Name}}", "--cpus", "2"]
             ],
-            "vm_name": "packer-centos-6_5-64"
+            "vm_name": "centos-6_5-64-puppet-riak"
         }
     ],
     "provisioners": [
@@ -43,7 +43,7 @@
     "post-processors": [
         {
             "type": "vagrant",
-            "output": "centos-6_5-64_virtualbox.box"
+            "output": "centos-6_5-64-puppet-riak_virtualbox.box"
         }
     ]
 }
